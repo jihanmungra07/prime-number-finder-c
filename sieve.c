@@ -27,11 +27,16 @@ int main() {
         }
     }
 
- printf("Prime numbers up to %d: \n", n);
+ printf("Prime numbers up to %d: ", n);
+ bool comma = true;
 
  for (int i = 2; i <= n; i++) {
     if (isPrime[i]) {
-        printf("%d\n", i);
+        if(!comma) {
+            printf(", ");
+        }
+        printf("%d ", i);
+        comma = false;
     }
  }
  return 0;
