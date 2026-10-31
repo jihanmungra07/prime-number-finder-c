@@ -35,7 +35,7 @@ int main() {
         if(!comma) {
             printf(", ");
         }
-        printf("%d ", i);
+        printf("%d",i);
         comma = false;
     }
  }
